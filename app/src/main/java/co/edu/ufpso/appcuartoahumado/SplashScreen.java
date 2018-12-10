@@ -3,7 +3,7 @@ package co.edu.ufpso.appcuartoahumado;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Splash_Screen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
