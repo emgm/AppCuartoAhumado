@@ -58,9 +58,7 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
 
-
     </RelativeLayout>
-
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/cvQueryBT"
@@ -98,7 +96,7 @@
                     android:paddingRight="12dp"
                     android:textColor="#616161"
                     android:textStyle="bold"
-                    android:text="Consultar Nivel Gas" />
+                    android:text="Consultar Temperatura" />
 
                 <com.github.mikephil.charting.charts.PieChart
                     android:id="@+id/pieChart"
@@ -117,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/pieChart"
-                    android:text="Concentración Gas"
+                    android:text="Temperatura del Ambiente"
                     android:textColor="#212121" />
 
                 <TextView
