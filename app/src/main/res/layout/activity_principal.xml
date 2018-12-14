@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal"
-            android:text="El dispositivo detector de gas no esta conectado con la aplicación."
+            android:text="El dispositivo detector no esta conectado con la aplicación."
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_centerVertical="true"
@@ -156,7 +156,7 @@
                     />
 
                 <Button
-                    android:id="@+id/btnAlert"
+                    android:id="@+id/btnSetting"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvStatusLevelGas"
@@ -167,7 +167,7 @@
                     android:drawableRight="@android:drawable/ic_dialog_alert"
                     android:paddingLeft="12dp"
                     android:paddingRight="12dp"
-                    android:text="Sonar Alarma"
+                    android:text="Configurar"
                     android:layout_marginTop="14dp"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
@@ -178,7 +178,7 @@
                     style="@style/styleSettings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/btnAlert"
+                    android:layout_below="@id/btnSetting"
                     android:gravity="center"
                     android:layout_marginBottom="13dp"
                     android:text="Footer"

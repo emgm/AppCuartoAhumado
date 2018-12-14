@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppCuartoAhumado</string>
+    <string name="deviceDisconnectAwsIot">Conectar Dispositivo x AWS IOT</string>
+    <string name="deviceConnectAwsIot">Desconectar Dispositivo x AWS IOT</string>
 </resources>

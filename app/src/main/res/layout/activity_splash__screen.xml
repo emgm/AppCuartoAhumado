@@ -37,7 +37,7 @@
         android:layout_below="@+id/tv1"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="6dp"
         android:text="Dispositivo para el control de ambiente en"
         android:gravity="center"
         android:textStyle="bold"

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingBluetooth">
+
+    <include
+        android:id="@+id/myToolBar"
+        layout="@layout/toolbar" />
+
+    <TextView
+
+        android:id="@+id/tvLabelConfigurarDatosInternet"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myToolBar"
+        android:text="Configurar envio de datos x Internet "
+
+        />
+
+    <ImageView
+
+        android:id="@+id/ivSettingSendDate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tvLabelConfigurarDatosInternet"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/ic_action" />
+
+    <TextView
+
+        android:id="@+id/tvStatusBT"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLabelConfigurarDatosInternet"
+        android:text="Hablitar Bluetooth"
+
+        />
+
+    <Switch
+
+        android:id="@+id/swStatusBT"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivSettingSendDate"
+
+        android:textOff="OFF"
+        android:textOn="ON"
+
+        />
+
+
+
+    <View
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/viewDeviceBT"
+        style="@style/styleSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvStatusBT"
+        android:background="#BDBDBD" />
+
+    <TextView
+
+        android:id="@+id/tvLabelTypeConnec"
+        style="@style/styleSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewDeviceBT"
+        android:gravity="center_horizontal"
+        android:text="Tipo de conexión"
+        android:textColor="#212121"
+
+        />
+
+    <TextView
+
+        android:id="@+id/tvStatusConnectDeviceBT"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLabelTypeConnec"
+        android:text="Conectar Dispositivo x Bluetooth"
+
+        />
+
+    <Switch
+
+        android:id="@+id/swStatusConnectDeviceBT"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLabelTypeConnec"
+        android:textOff="OFF"
+        android:textOn="ON"
+
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/rlDeviceConnectBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStatusConnectDeviceBT"
+        android:visibility="gone">
+
+
+        <TextView
+
+            android:id="@+id/tvNameDeviceBT"
+            style="@style/styleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Dispositivo"
+            android:textColor="#212121" />
+
+        <TextView
+
+            android:id="@+id/tvMACDeviceBT"
+            style="@style/styleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvNameDeviceBT"
+            android:text="MAC Device"
+            android:textColor="#212121"
+
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/tvLoadConnectDeviceBT"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlDeviceConnectBT"
+        android:text="Conectando..."
+        android:visibility="gone"
+        android:textColor="#212121"
+        />
+
+    <TextView
+
+        android:id="@+id/tvStatusConnectDeviceAwsIot"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLoadConnectDeviceBT"
+        android:text="@string/deviceDisconnectAwsIot"
+
+        />
+
+    <Switch
+
+        android:id="@+id/swStatusConnectDeviceAwsIot"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLoadConnectDeviceBT"
+        android:textOff="OFF"
+        android:textOn="ON"
+
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/rlDeviceConnectAwsIot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStatusConnectDeviceAwsIot"
+        android:visibility="gone">
+
+
+        <TextView
+
+            android:id="@+id/tvClientIdDeviceAwsIot"
+            style="@style/styleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client ID"
+            android:textColor="#212121" />
+
+        <TextView
+
+            android:id="@+id/tvApiEndpointDeviceWifi"
+            style="@style/styleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvClientIdDeviceAwsIot"
+            android:text="API Endpoint"
+            android:textColor="#212121"
+
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/tvLoadConnectDeviceAwsIot"
+        style="@style/styleSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlDeviceConnectAwsIot"
+        android:text="Conectando..."
+        android:visibility="gone"
+        android:textColor="#212121"
+
+        />
+
+</RelativeLayout>
